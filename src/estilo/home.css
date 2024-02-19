@@ -1,0 +1,145 @@
+.headline{
+    padding-top: 5rem;
+    background: linear-gradient(var(--black__3), black);
+    height: 80vh;
+    position: relative;
+}
+
+.efeitos__headline{
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.quadrados{
+    border-radius: 4rem;
+    width: 20rem; height: 20rem;
+    border: 1px solid var(--home__5);
+    opacity: .4;
+    position: absolute;
+}
+
+.bola__pai{
+    width: 15rem; height: 15rem;
+    background: var(--home__2);
+    border-radius: 50%;
+    position: absolute;
+    right: 0rem;
+    bottom: -4rem;
+    display: flex;
+    align-items: center; justify-content: center;
+    overflow: hidden;
+    animation: rodar__bola__pai 2s linear infinite;
+}
+
+@keyframes rodar__bola__pai {
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+.bola__filha{
+    background: var(--home__5);
+    width: 8rem; height: 8rem;
+    border-radius: 50%;
+}
+
+.linha{
+    width: 4rem; height: 3rem;
+    position: absolute;
+    left: 0;
+    background: var(--home__5);
+}
+
+.quadrado__1{
+    width: 23rem; height: 23rem;
+    right: -6rem;
+    bottom: 0;
+}
+
+.quadrado__2{
+    top: -10%;
+    left: -2rem;
+}
+
+.headline__left{
+    padding: 0.6rem 1rem;
+}
+
+.headline__linha__bottom{
+    background: var(--home__1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headline__linha__bottom ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.headline__linha__bottom li p{
+    display: block;
+    width: 100%;
+}
+
+.left__welcome{
+    display: flex;
+    align-items: center; justify-content: start;
+    gap: 1rem;
+}
+
+.left__welcome img{
+    width: 4rem;
+}
+
+.left__welcome p{
+    z-index: 1;
+    font-family: var(--font__cortada);
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.left__kayky{
+    z-index: 1;
+    position: relative;
+    top: 3rem;
+    transform: perspective(800px) rotatey(25deg);
+    animation: left__kayky__rotatey .8s ease-in-out;
+    position: relative;
+    left: 1rem;
+}
+
+@keyframes left__kayky__rotatey {
+    0%{
+        left: -20rem;
+        transform: perspective(800px) rotatey(360deg);
+    }
+
+    100%{
+        left: 1rem;
+        transform: perspective(800px) rotatey(25deg);
+    }
+}
+
+.left__kayky h1{
+    text-transform: capitalize;
+    color: var(--white);
+    text-shadow: 0 0 1rem rgb(0 0 0 / .4);
+}
+
+.left__kayky p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: 0 0 1rem rgb(0 0 0 / .4);
+}
